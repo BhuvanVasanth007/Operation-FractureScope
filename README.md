@@ -36,25 +36,25 @@ python src/train_yolo.py \
   --imgsz 512 \
   --batch 16
   
-6. **Export & quantize**
+5. **Export & quantize**
    
 python src/export_and_quantize.py
 
-8. **Benchmark CPU‐only latency**
+6. **Benchmark CPU‐only latency**
    
 python src/benchmark.py
 
-10. **Visualize labels & preds**
+7. **Visualize labels & preds**
     
 python src/visualize.py
 
-12. **Edge demo**
+8. **Edge demo**
     
 python deploy/edge_inference.py \
   --source data/sample_images \
   --model weights/final_synthetic_defect_q.onnx
   
-14. **Secure logging scaffold**
+9. **Secure logging scaffold**
     
 python deploy/device_logger.py
 
