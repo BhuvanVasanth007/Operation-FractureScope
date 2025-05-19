@@ -18,8 +18,10 @@ EdgeX AI Challenge – Bridge inspection cracks, corrosion & leak detection
    source venv/bin/activate    # macOS/Linux
    venv\Scripts\activate.bat   # Windows
 2. **Install deps**
+
 pip install -r requirements.txt
 3. **Regenerate full synthetic data**
+
 python src/generate_synthetic_data.py \
   --out_dir data/full_images \
   --train_count 1000 \
